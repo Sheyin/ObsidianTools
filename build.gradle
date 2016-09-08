@@ -85,3 +85,6 @@ processResources
         exclude 'mcmod.info'
     }
 }
+
+//added to work w/ intellij: http://www.minecraftforge.net/forum/index.php/topic,21354.0.html
+idea { module { inheritOutputDirs = true } }
