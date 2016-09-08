@@ -3,7 +3,7 @@
  */
 
 package com.sheyin.experiment;
-import com.sheyin.experiment.proxy.ModItems;
+import com.sheyin.experiment.item.ModItems;
 import net.minecraftforge.fml.common.Mod;
 import net.minecraftforge.fml.common.event.FMLInitializationEvent;
 import net.minecraftforge.fml.common.event.FMLPostInitializationEvent;
@@ -23,6 +23,7 @@ public class TutorialMod {
     public void preInit(FMLPreInitializationEvent event) {
         ModItems.init();
     }
+
     @Mod.EventHandler
     public void init(FMLInitializationEvent event) {
     }
@@ -30,4 +31,7 @@ public class TutorialMod {
     @Mod.EventHandler
     public void postInit(FMLPostInitializationEvent event) {
     }
+
+    @SidedProxy(serverSide = "com.sheyin.experiment.proxy.CommonProxy", clientSide = "com.sheyin.experiment.proxy.ClientProxy")
+    public static CommonProxy proxy;
 }

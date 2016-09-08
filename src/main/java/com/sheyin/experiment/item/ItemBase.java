@@ -19,10 +19,15 @@ public class ItemBase extends Item {
         //setCreativeTab(TutorialMod.creativeTab);
     }
 
-    @Override
-    public void registerItemModel(Item item) {
-        // guide uses TutorialMod.proxy.registerItemRenderer
+    //@Override
+    //public void registerItemModel(Item item) {
+    //    // guide uses TutorialMod.proxy.registerItemRenderer
+    //    TutorialMod.proxy.registerItemRenderer(this, 0, name);
+    //}
+
+    public void registerItemModel() {
         TutorialMod.proxy.registerItemRenderer(this, 0, name);
+
     }
 
     @Override
