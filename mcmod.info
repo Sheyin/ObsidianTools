@@ -1,0 +1,16 @@
+[
+{
+  "modid": "ot",
+  "name": "Obsidian Tools",
+  "description": "Adds some new tools.",
+  "version": "1.00",
+  "mcversion": "1.10.2",
+  "url": "",
+  "updateUrl": "",
+  "authorList": ["Sheyin", "Ama"],
+  "credits": "I'm not sure",
+  "logoFile": "",
+  "screenshots": [],
+  "dependencies": []
+}
+]
